@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AllNotes from './Components/AllNotes';
 import NotesForm from './Components/NotesForm';
+import './Components/NotesForm.css';
+import './Components/AllNotes.css';
+
 
 function App() {
   return (
