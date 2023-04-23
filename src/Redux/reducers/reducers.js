@@ -23,6 +23,14 @@ function rootReducer(state = initialState ,action){
             })
         }
     }
+    else if(action.type == 'UPDATE_NOTE'){
+        return{
+            notes: state.notes.map((note) =>
+          note.id === action.payload.id ? { ...note, ...action.payload } : note
+        )
+      
+        }
+    }
     else{
         return state
     }

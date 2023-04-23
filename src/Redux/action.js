@@ -12,3 +12,15 @@ export function removeNote(id){
         id:id
     }
 }
+
+export const updateNote = (id, title, content) => {
+    return {
+      type: "UPDATE_NOTE",
+      payload: {
+        id,
+        title,
+        content
+      }
+    }
+  }
+  
